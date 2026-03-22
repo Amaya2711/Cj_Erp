@@ -28,12 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(800, 450);
-            Text = "Form1";
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.lblClave = new System.Windows.Forms.Label();
+            this.txtClave = new System.Windows.Forms.TextBox();
+            this.btnIngresar = new System.Windows.Forms.Button();
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(30, 30);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(50, 15);
+            this.lblUsuario.Text = "Usuario:";
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Location = new System.Drawing.Point(100, 27);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(150, 23);
+            // 
+            // lblClave
+            // 
+            this.lblClave.AutoSize = true;
+            this.lblClave.Location = new System.Drawing.Point(30, 70);
+            this.lblClave.Name = "lblClave";
+            this.lblClave.Size = new System.Drawing.Size(40, 15);
+            this.lblClave.Text = "Clave:";
+            // 
+            // txtClave
+            // 
+            this.txtClave.Location = new System.Drawing.Point(100, 67);
+            this.txtClave.Name = "txtClave";
+            this.txtClave.Size = new System.Drawing.Size(150, 23);
+            this.txtClave.PasswordChar = '*';
+            // 
+            // btnIngresar
+            // 
+            this.btnIngresar.Location = new System.Drawing.Point(100, 110);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(75, 23);
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
+            // 
+            // frmLogin
+            // 
+            this.ClientSize = new System.Drawing.Size(300, 160);
+            this.Controls.Add(this.lblUsuario);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.lblClave);
+            this.Controls.Add(this.txtClave);
+            this.Controls.Add(this.btnIngresar);
+            this.Name = "frmLogin";
+            this.Text = "Ingreso al Sistema";
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.Label lblClave;
+        private System.Windows.Forms.TextBox txtClave;
+        private System.Windows.Forms.Button btnIngresar;
     }
 }
