@@ -2,9 +2,9 @@
 
 namespace DxCjERP
 {
-    public partial class Form1 : XtraForm
+    public partial class frmLogin : XtraForm
     {
-        public Form1()
+        public frmLogin()
         {
             InitializeComponent();
         }

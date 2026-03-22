@@ -1,6 +1,6 @@
 ﻿namespace DxCjERP
 {
-    partial class Form1
+    partial class frmLogin
     {
         /// <summary>
         ///  Required designer variable.
